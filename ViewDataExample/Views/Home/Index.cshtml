@@ -1,0 +1,14 @@
+﻿<html>
+<head>
+    <title>View Data With Models</title>
+</head>
+<body>
+  @{
+      var tempemp = (ViewDataExample.Models.Employee)ViewData["myEmp"];
+
+   }
+    <p>Employee ID: @tempemp.EmpID</p>
+    <p>Employee Name: @tempemp.EmpName</p>
+    <p>Employee Salary: @tempemp.EmpSalary</p>
+</body>
+</html>
